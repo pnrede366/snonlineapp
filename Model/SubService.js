@@ -7,8 +7,14 @@ const subservice = mongoose.Schema({
   parentService: {
     type: String,
   },
-  category:{
-    type: Array
+  category: {
+    type: Array,
+  },
+  document: {
+    type: Array,
+  },
+  formFields:{
+    type:Array
   }
 });
 

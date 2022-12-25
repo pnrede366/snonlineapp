@@ -28,6 +28,9 @@ const form = mongoose.Schema({
   taluka: {
     type: String,
   },
+  extras:{
+    type:Array
+  }
 });
 
 module.exports = mongoose.model("form", form);
