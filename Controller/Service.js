@@ -21,6 +21,7 @@ exports.createService = async (req, res) => {
 };
 
 exports.deleteService = async (req, res) => {
+  console.log(req.body);
   const data = await service.findByIdAndDelete({ _id: req.body.id });
   res.status(200).json({
     success: true,
